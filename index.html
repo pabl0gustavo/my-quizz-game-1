@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+     const firebaseConfig = {
+      apiKey: "AIzaSyD5jSEyCpdL86H4PiGRo1_e870du6E6cas",
+      authDomain: "apanhadordefrutas-1a5e3.firebaseapp.com",
+      databaseURL: "https://apanhadordefrutas-1a5e3-default-rtdb.firebaseio.com",
+      projectId: "apanhadordefrutas-1a5e3",
+      storageBucket: "apanhadordefrutas-1a5e3.appspot.com",
+      messagingSenderId: "489818736932",
+      appId: "1:489818736932:web:602cb8717700c3fe870bb1"
+    };
+
+     
+
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
